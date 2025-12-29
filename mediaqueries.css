@@ -111,3 +111,87 @@
     text-align: justify;
   }
 }
+
+
+/* =========================
+   MOBILE TOP RIGHT MENU
+========================= */
+
+.mobile-top-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-top-menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 4000;
+    display: block;
+  }
+
+  .menu-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, crimson, blueviolet);
+    color: white;
+
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .top-menu-list {
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    background: white;
+    border-radius: 16px;
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    min-width: 160px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .top-menu-list.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .top-menu-list button {
+    background: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .top-menu-list button:hover {
+    background: rgba(220, 20, 60, 0.1);
+  }
+
+  /* Hide desktop hamburger if needed */
+  #hamburger-nav {
+    display: none;
+  }
+}
