@@ -4,16 +4,30 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+// const reveals = document.querySelectorAll("section");
+
+// window.addEventListener("scroll", () => {
+//   reveals.forEach(section => {
+//     const top = section.getBoundingClientRect().top;
+//     if (top < window.innerHeight - 100) {
+//       section.classList.add("active", "reveal");
+//     }
+//   });
+// });
 const reveals = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
+function revealOnLoadAndScroll() {
   reveals.forEach(section => {
     const top = section.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
-      section.classList.add("active", "reveal");
+      section.classList.add("active");
     }
   });
-});
+}
+
+window.addEventListener("scroll", revealOnLoadAndScroll);
+window.addEventListener("load", revealOnLoadAndScroll);
+
 
 
 
