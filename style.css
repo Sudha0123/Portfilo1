@@ -836,3 +836,82 @@ article .icon {
   }
 }
 
+.section__text__p1 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #dc143c, #6a0dad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.section__text__p2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #444;
+  margin-top: 0.6rem;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+section .title {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__text__p1 {
+  color: #777;
+}
+.text-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  letter-spacing: 0.2px;
+}
+.details-container h3,
+.experience-sub-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #333;
+}
+.project-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6a0dad, #dc143c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn {
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+
+  .text-container p {
+    font-size: 0.95rem;
+  }
+}
